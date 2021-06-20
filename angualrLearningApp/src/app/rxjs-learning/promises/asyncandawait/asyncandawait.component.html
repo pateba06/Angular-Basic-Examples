@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <h1>Async. When we use async keyword before function then it always return promise</h1>
+        <!-- <h1><strong>{{promiseVal}}</strong></h1> -->
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Example 1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <iframe height="700" style="width: 100%;" scrolling="no" title="Async Example"
+                        src="https://codepen.io/pateba06/embed/NWpmRZo?height=265&theme-id=dark&default-tab=js,result"
+                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/pateba06/pen/NWpmRZo'>Async Example</a> by Badal
+                        (<a href='https://codepen.io/pateba06'>@pateba06</a>) on <a
+                            href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <hr>
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <strong>EX - 01 : With Promise</strong>
+                <hr>
+                <button class="btn btn-primary" (click)="fetch1()"> Buy Laptop</button>
+                <h4 id="result1">{{result1}}</h4>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <strong>EX - 02 : With Asynch / Wait</strong>
+                <hr>
+                <button class="btn btn-primary" (click)="fetch2()"> Buy Laptop</button>
+                <h4 id="result2">{{result2}}</h4>
+            </div>
+
+            <div class="col-md-4">
+                <strong>EX - 03 : With Fetch Api</strong>
+                <hr>
+                <button class="btn btn-primary" (click)="fetch3()"> Buy Laptop</button>
+                <h4 id="result3">{{result3}}</h4>
+            </div>
+        </div>
+    </div>

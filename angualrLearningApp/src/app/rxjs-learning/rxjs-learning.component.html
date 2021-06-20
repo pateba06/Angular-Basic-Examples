@@ -5,13 +5,60 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="/promises">Promise</a>
+                    <a class="nav-link" routerLink="/rxjs/promises">Promise</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"  routerLink="/observables">Observable</a>
+                    <a class="nav-link" routerLink="/rxjs/observables">Observable</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/rxjs/asynchandawait">Async and Await</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+<img src="../../assets/synchAndAsynch.JPG">
+<p>Both observables and promises help us work with asynchronous functionality in
+    JavaScript. Promises deal with one asynchronous event at a time, while observables handle a sequence of asynchronous
+    events over a period of time.</p>
+<p>Let’s see the <strong>difference between observable and promise&nbsp;</strong>(observable vs promise)</p>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th style="width: 312px;"><strong>Observables</strong></th>
+            <th style="width: 312px;"><strong>Promises</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td style="width: 312px;">Performs Async & Synch task</td>
+            <td style="width: 312px;">Promises can only perform Async task"</td>
+        </tr>
+        <tr>
+            <td style="width: 312px;">Emit multiple values over a period of time.</td>
+            <td style="width: 312px;">Emit a single value at a time.</td>
+        </tr>
+        <tr>
+            <td style="width: 312px;">Are lazy: they’re not executed until we subscribe to them using the subscribe()
+                method.</td>
+            <td style="width: 312px;">Are not lazy: execute immediately after creation.</td>
+        </tr>
+        <tr>
+            <td style="width: 312px;">Have subscriptions that are cancellable using the unsubscribe() method, which
+                stops the listener from receiving further values.</td>
+            <td style="width: 312px;">Are not cancellable.</td>
+        </tr>
+        <tr>
+            <td style="width: 312px;">Provide the map for forEach, filter, reduce, retry, and retryWhen operators.</td>
+            <td style="width: 312px;">Don’t provide any operations.</td>
+        </tr>
+        <tr>
+            <td style="width: 312px;">Deliver errors to the subscribers.</td>
+            <td style="width: 312px;">Push errors to the child promises.</td>
+        </tr>
+    </tbody>
+</table>
+
+
 <router-outlet></router-outlet>
