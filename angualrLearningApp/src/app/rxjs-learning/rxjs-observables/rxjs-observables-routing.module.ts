@@ -10,6 +10,13 @@ const routes: Routes = [
     loadChildren: () =>
       import('./from-event/from-event.module').then((m) => m.FromEventModule),
   },
+  {
+    path: 'rxjs-interval-timer',
+    loadChildren: () =>
+      import('./interval-and-timer/interval-and-timer.module').then(
+        (m) => m.IntervalAndTimerModule
+      ),
+  },
 ];
 
 @NgModule({
