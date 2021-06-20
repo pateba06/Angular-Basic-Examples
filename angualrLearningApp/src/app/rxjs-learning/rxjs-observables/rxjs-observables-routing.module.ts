@@ -17,6 +17,7 @@ const routes: Routes = [
         (m) => m.IntervalAndTimerModule
       ),
   },
+  { path: 'switch-map', loadChildren: () => import('./switch-map/switch-map.module').then(m => m.SwitchMapModule) },
 ];
 
 @NgModule({

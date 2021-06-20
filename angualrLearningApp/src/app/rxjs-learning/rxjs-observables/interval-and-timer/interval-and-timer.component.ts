@@ -36,17 +36,17 @@ export class IntervalAndTimerComponent implements OnInit {
 
     /************    // Example 2 --- Timer ********************************************************************/
     // timer has two aregumenet timer(delay,interval)
-    const broadCastVideosTimer = timer(5000,1000);
-       // Subscribing to broadCastVideos -- where rxjs interval will get data every 2 sec
-       broadCastVideosTimer.subscribe((res) => {
-        console.log(res);
-        this.obsMessageTimer = 'video' + res;
-        this.sharedService.elAppend(this.obsMessageTimer, 'elContainertimer');
-  
-        // unsubscribing the subscription after data stream is 5.
-        if (res >= 5) {
-          this.subscription.unsubscribe;
-        }
-      });
+    const broadCastVideosTimer = timer(5000, 1000);
+    // Subscribing to broadCastVideos -- where rxjs interval will get data every 2 sec
+    broadCastVideosTimer.subscribe((res) => {
+      console.log(res);
+      this.obsMessageTimer = 'video' + res;
+      this.sharedService.elAppend(this.obsMessageTimer, 'elContainertimer');
+
+      // unsubscribing the subscription after data stream is 5.
+      if (res >= 5) {
+        this.subscription.unsubscribe;
+      }
+    });
   }
 }
