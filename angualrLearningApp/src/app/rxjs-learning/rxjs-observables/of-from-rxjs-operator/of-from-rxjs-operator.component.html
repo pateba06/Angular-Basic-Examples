@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="row">
+        <div class="alert alert-dismissible alert-success">
+            <h4 class="alert-heading">OF() Operator in RXJS</h4>
+            <p> It converts the arguments to an Observable Sequence</p>
+        </div>
+        <div class="alert alert-dismissible alert-warning " style="border: solid 1px black;width: 40%;margin-left: 5%;">
+            <h4 class="alert-heading">OF() Example 1</h4>
+            <p class="border border-success py-2 px-2 rounded"> <strong>Data: </strong> of('Patel','Shah','Parmar')</p>
+            <hr>
+            <h5>Using Of operator ---showing from Observable stream below</h5>
+            <hr>
+            <ul id="elContainer">
+                <!-- li is dynamically created injecting services and creating li element -->
+            </ul>
+        </div>
+        <div class="alert alert-dismissible alert-warning " style="border: solid 1px black;width: 40%;margin-left: 10%">
+            <h4 class="alert-heading">OF() Example 2 - Getting Data from Object</h4>
+            <p class="border border-success py-2 px-2 rounded"> <strong>Data: </strong> of( &#123;a: 'Patel', b: 'Shah',
+                c: 'Parmar' &#125;)</p>
+            <hr>
+            <h5>Using Of operator ---Getting Observable from Object and showing below</h5>
+            <hr>
+            <ul id="elContainer2">
+                <li>{{obsMsg.a}}</li>
+                <li>{{obsMsg.b}}</li>
+                <li>{{obsMsg.c}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="alert alert-dismissible alert-success">
+            <h4 class="alert-heading">From() Operator in RXJS</h4>
+            <p>Creates an Observable from an Array, an array-like object, a promise, an iterable object, or an Observable-like object</p>
+        </div>
+        <div class="alert alert-dismissible alert-warning " style="border: solid 1px black;width:30%;margin-left: 2.5%;">
+            <h4 class="alert-heading">From() - Using Array Example 3</h4>
+            <p class="border border-success py-2 px-2 rounded"> <strong>Data: </strong> of('Patel','Shah','Parmar')</p>
+            <hr>
+            <h5>Using Of operator ---showing from Observable stream below</h5>
+            <hr>
+            <ul id="elContainer">
+                <!-- li is dynamically created injecting services and creating li element -->
+            </ul>
+        </div>
+        <div class="alert alert-dismissible alert-warning " style="border: solid 1px black;width: 30%;margin-left: 2.5%">
+            <h4 class="alert-heading">From() - Using Promise Example 4</h4>
+            <p class="border border-success py-2 px-2 rounded"> <strong>Data: </strong> of( &#123;a: 'Patel', b: 'Shah',
+                c: 'Parmar' &#125;)</p>
+            <hr>
+            <h5>Using Of operator ---Getting Observable from Object and showing below</h5>
+            <hr>
+            <ul id="elContainer2">
+                <li>{{obsMsg.a}}</li>
+                <li>{{obsMsg.b}}</li>
+                <li>{{obsMsg.c}}</li>
+            </ul>
+        </div>
+        <div class="alert alert-dismissible alert-warning " style="border: solid 1px black;width: 30%;margin-left:2.5%">
+            <h4 class="alert-heading">From() - Using String Example 5</h4>
+            <p class="border border-success py-2 px-2 rounded"> <strong>Data: </strong> of( &#123;a: 'Patel', b: 'Shah',
+                c: 'Parmar' &#125;)</p>
+            <hr>
+            <h5>Using Of operator ---Getting Observable from Object and showing below</h5>
+            <hr>
+            <ul id="elContainer2">
+                <li>{{obsMsg.a}}</li>
+                <li>{{obsMsg.b}}</li>
+                <li>{{obsMsg.c}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

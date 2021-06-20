@@ -17,7 +17,18 @@ const routes: Routes = [
         (m) => m.IntervalAndTimerModule
       ),
   },
-  { path: 'switch-map', loadChildren: () => import('./switch-map/switch-map.module').then(m => m.SwitchMapModule) },
+  {
+    path: 'switch-map',
+    loadChildren: () =>
+      import('./switch-map/switch-map.module').then((m) => m.SwitchMapModule),
+  },
+  {
+    path: 'of-from-rxjs-operator',
+    loadChildren: () =>
+      import('./of-from-rxjs-operator/of-from-rxjs-operator.module').then(
+        (m) => m.OfFromRxjsOperatorModule
+      ),
+  },
 ];
 
 @NgModule({
