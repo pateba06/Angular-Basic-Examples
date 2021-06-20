@@ -27,7 +27,7 @@
     <hr>
     <hr>
 
-    
+
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -37,6 +37,7 @@
                 <h4 id="result1">{{result1}}</h4>
             </div>
 
+            <hr>
 
 
             <div class="col-md-4">
@@ -45,12 +46,13 @@
                 <button class="btn btn-primary" (click)="fetch2()"> Buy Laptop</button>
                 <h4 id="result2">{{result2}}</h4>
             </div>
-
+            <hr>
             <div class="col-md-4">
                 <strong>EX - 03 : With Fetch Api</strong>
                 <hr>
-                <button class="btn btn-primary" (click)="fetch3()"> Buy Laptop</button>
-                <h4 id="result3">{{result3}}</h4>
+                <button class="btn btn-primary" (click)="fetch3promise();fetch3asyncawait()"> Buy Laptop</button>
+                <h4 id="result3">Promise: {{result3Promise}}</h4>
+                <h4 id="result3">Async-Await: {{result3asyncawait}}</h4>
             </div>
         </div>
     </div>

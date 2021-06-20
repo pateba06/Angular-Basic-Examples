@@ -74,14 +74,24 @@ export class AsyncandawaitComponent implements OnInit {
 
   // Example 3 ---Fetch With API
   buylaptop3 = fetch('https://jsonplaceholder.typicode.com/posts').then(
-    (response => response.json())
+    (response) => response.json()
   );
-  result3: string = 'data';
-  fetch3() {
-    this.result3 = 'Fetching Data';
+  result3Promise: string = 'data';
+  fetch3promise() {
+    this.result3Promise = 'Fetching Data';
     // Promise
-    this.buylaptop3.then(res => {
-      this.result3 = JSON.stringify(res);
+    this.buylaptop3.then((res) => {
+      this.result3Promise = JSON.stringify(res);
+      console.log('Using Promise' + this.result3Promise)
     });
+  }
+  // async/await
+  result3asyncawait:string ='data'
+  async fetch3asyncawait() {
+    this.result3asyncawait ='Fetching Data';
+    let res =await this.buylaptop3;
+    this.result3asyncawait = JSON.stringify(res)
+    console.log('using async await' + this.result3asyncawait)
+    
   }
 }
