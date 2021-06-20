@@ -37,39 +37,32 @@
             <p>Creates an Observable from an Array, an array-like object, a promise, an iterable object, or an Observable-like object</p>
         </div>
         <div class="alert alert-dismissible alert-warning " style="border: solid 1px black;width:30%;margin-left: 2.5%;">
-            <h4 class="alert-heading">From() - Using Array Example 3</h4>
-            <p class="border border-success py-2 px-2 rounded"> <strong>Data: </strong> of('Patel','Shah','Parmar')</p>
+            <h4 class="alert-heading">From() - Array to Observable 3</h4>
+            <p class="border border-success py-2 px-2 rounded" style="overflow: auto;"> <strong>Data: </strong> from(['USA','Canada','Australia','India'])</p>
             <hr>
-            <h5>Using Of operator ---showing from Observable stream below</h5>
+            <h5>Using From operator ---Getting Observable from array and showing below</h5>
             <hr>
-            <ul id="elContainer">
+            <hr>
+            <ul id="elContainer3">
                 <!-- li is dynamically created injecting services and creating li element -->
             </ul>
         </div>
         <div class="alert alert-dismissible alert-warning " style="border: solid 1px black;width: 30%;margin-left: 2.5%">
-            <h4 class="alert-heading">From() - Using Promise Example 4</h4>
-            <p class="border border-success py-2 px-2 rounded"> <strong>Data: </strong> of( &#123;a: 'Patel', b: 'Shah',
-                c: 'Parmar' &#125;)</p>
+            <h4 class="alert-heading">From() -Promise to Observable Example 4</h4>
+            <p class="border border-success py-2 px-2 rounded"> <strong>Data: </strong> Promise to Observable</p>
             <hr>
-            <h5>Using Of operator ---Getting Observable from Object and showing below</h5>
+            <h5>Using From Operator --using Promise to Observable and showing below</h5>
             <hr>
-            <ul id="elContainer2">
-                <li>{{obsMsg.a}}</li>
-                <li>{{obsMsg.b}}</li>
-                <li>{{obsMsg.c}}</li>
+            <ul id="elContainer4">
             </ul>
         </div>
         <div class="alert alert-dismissible alert-warning " style="border: solid 1px black;width: 30%;margin-left:2.5%">
-            <h4 class="alert-heading">From() - Using String Example 5</h4>
-            <p class="border border-success py-2 px-2 rounded"> <strong>Data: </strong> of( &#123;a: 'Patel', b: 'Shah',
-                c: 'Parmar' &#125;)</p>
+            <h4 class="alert-heading">From() - String to Observable Example 5</h4>
+            <p class="border border-success py-2 px-2 rounded"> <strong>Data: </strong>String to Observable</p>
             <hr>
-            <h5>Using Of operator ---Getting Observable from Object and showing below</h5>
+            <h5>Using From operator ---String to Observable</h5>
             <hr>
-            <ul id="elContainer2">
-                <li>{{obsMsg.a}}</li>
-                <li>{{obsMsg.b}}</li>
-                <li>{{obsMsg.c}}</li>
+            <ul id="elContainer5">
             </ul>
         </div>
     </div>
