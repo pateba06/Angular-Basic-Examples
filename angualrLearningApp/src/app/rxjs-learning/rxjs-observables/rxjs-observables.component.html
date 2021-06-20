@@ -1,1 +1,39 @@
-<p>rxjs-observables works!</p>
+<h1>Observable</h1>
+<div class="container">
+    <div class="row">
+
+        <div>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                Observable
+            </button>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <ul>
+                        <h4>Observable Stream</h4>
+                        <li>User Input (Button Click Event)</li>
+                        <li>Http Request</li>
+                        <li>Array</li>
+                        <li>Object</li>
+                    </ul>
+                    <ul>
+                        <h4>Observable Handle (subscribe)</h4>
+                        <li>Data</li>
+                        <li>Error</li>
+                        <li>Completion</li>
+                    </ul>
+                    <code><pre>
+                        .subscribe(
+                            (data) => console.log(data), --1st argument --We recieve Data
+                            (error) => console.log(error),  -- 2nd argument is for error
+                            () => console.log('complete') -- 3rd argumet is for completion
+                        )
+                    </pre> </code>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
