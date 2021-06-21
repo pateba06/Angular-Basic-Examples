@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AngularTopicsComponent } from './angular-topics.component';
+import { AsyncandawaitComponent } from './asyncandawait.component';
 
-describe('AngularTopicsComponent', () => {
-  let component: AngularTopicsComponent;
-  let fixture: ComponentFixture<AngularTopicsComponent>;
+describe('AsyncandawaitComponent', () => {
+  let component: AsyncandawaitComponent;
+  let fixture: ComponentFixture<AsyncandawaitComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AngularTopicsComponent ]
+      declarations: [ AsyncandawaitComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AngularTopicsComponent);
+    fixture = TestBed.createComponent(AsyncandawaitComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

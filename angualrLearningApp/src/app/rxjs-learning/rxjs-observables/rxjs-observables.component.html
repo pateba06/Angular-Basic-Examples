@@ -1,0 +1,51 @@
+<div class="container" style="margin-top: 20px">
+    <div class="row">
+
+        <div>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                Observable
+            </button>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <ul>
+                        <h4>Observable Stream</h4>
+                        <li>User Input (Button Click Event)</li>
+                        <li>Http Request</li>
+                        <li>Array</li>
+                        <li>Object</li>
+                    </ul>
+                    <ul>
+                        <h4>Observable Handle (subscribe)</h4>
+                        <li>Data</li>
+                        <li>Error</li>
+                        <li>Completion</li>
+                    </ul>
+                    <code><pre>
+                        .subscribe(
+                            (data) => console.log(data), --1st argument --We recieve Data
+                            (error) => console.log(error),  -- 2nd argument is for error
+                            () => console.log('complete') -- 3rd argumet is for completion
+                        )
+                    </pre> </code>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="margin-top: 30px;">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="list">
+                <li><a routerLink="from-event">from event</a></li>
+                <li><a routerLink="rxjs-interval-timer">Interval And Timer</a></li>
+                <li><a routerLink="Switch-map">Switch Map</a></li>
+                <li><a routerLink="of-from-rxjs-operator">OF & From Rxjs Operator</a></li>
+                <li><a routerLink="to-array-rxjs-operator">To Array Operator in Rxjs</a></li>
+                <!-- <li><a>to-array-rxjs-operator</a></li> -->
+            </ul>
+        </div>
+    </div>
+</div>
