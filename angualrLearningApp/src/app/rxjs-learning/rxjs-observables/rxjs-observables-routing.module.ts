@@ -29,6 +29,13 @@ const routes: Routes = [
         (m) => m.OfFromRxjsOperatorModule
       ),
   },
+  {
+    path: 'to-array-rxjs-operator',
+    loadChildren: () =>
+      import('./to-array-rxjs-operator/to-array-rxjs-operator.module').then(
+        (m) => m.ToArrayRxjsOperatorModule
+      ),
+  },
 ];
 
 @NgModule({
