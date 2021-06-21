@@ -1,4 +1,4 @@
-# AngualrLearningApp
+# AngualrLearningApp  --- I want to use as many angular examples in the single app using lazy load .
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
 
