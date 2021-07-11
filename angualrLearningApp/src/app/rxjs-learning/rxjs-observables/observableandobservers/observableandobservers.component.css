@@ -1,0 +1,21 @@
+.obs-example{
+    background-color: beige;
+    border: 1px solid black;
+    margin-bottom: 40px;
+}
+.comp1{
+    border: 1px solid rebeccapurple;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.comp2 ,.comp3{
+    margin-top: 25px;
+    border: 1px solid green;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+img{
+    width: 100%;
+    overflow:unset;
+}
