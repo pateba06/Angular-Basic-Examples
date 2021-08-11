@@ -1,0 +1,4 @@
+<h2> Component A</h2>
+<input type="text" class = "input1" placeholder="Type Message to send to Component B" #textValue>
+<button  class=" button btn-primary button1" (click)="sendMessage(textValue.value)">Send Message</button>
+<button  class="button btn-primary button2" (click)="clearMessage()">Clear Message</button> 

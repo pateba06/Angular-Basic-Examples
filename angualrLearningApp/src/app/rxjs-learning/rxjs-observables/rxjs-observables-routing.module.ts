@@ -36,6 +36,7 @@ const routes: Routes = [
         (m) => m.ToArrayRxjsOperatorModule
       ),
   },
+  { path: 'observablesandobservers', loadChildren: () => import('./observableandobservers/observableandobservers.module').then(m => m.ObservableandobserversModule) },
 ];
 
 @NgModule({
