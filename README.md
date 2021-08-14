@@ -9,7 +9,7 @@ In entire flow all the components are lazy loaded
 
 shortcut command for lazy loading
 
-ng generate module <NewcomponentName> --module <ParentRouteComponentName> --routing true --route <routewhichyouwanakeep> 
+ng generate module NewcomponentName --module ParentRouteComponentName --routing true --route routewhichyouwanakeep 
   
   example
   
