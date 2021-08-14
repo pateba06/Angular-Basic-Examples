@@ -1,0 +1,8 @@
+<h5>Component A</h5>
+<p>Example 1:Interaction Using Subject. Sending Message from Component A to B. No parent Child Relation</p>
+<input type="text" placeholder="Please enter message to sent" #messageText><br>
+<button type="submit" (click)="sendMessageSubject(messageText)">Sent Message to Component B using Subject</button>
+<hr>
+<p>Example 2:Interaction Using BehaviorSubject. Sending Message from Component A to B. No parent Child Relation</p>
+<input type="text" placeholder="Please enter message to sent" #messageText2><br>
+<button type="submit" (click)="sendMessageBehaviorSubject(messageText2)">Sent Message to Component B using BehaviorSubject</button>
