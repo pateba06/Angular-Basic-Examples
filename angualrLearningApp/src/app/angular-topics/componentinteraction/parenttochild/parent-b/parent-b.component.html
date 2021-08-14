@@ -1,3 +1,5 @@
-<p>
-  parent-b works!
-</p>
+<h3>Parent Component</h3>
+<input type="text" #messagetoChild>
+<button (click)="sendMesageToChild(messagetoChild)">Sent Message To Child Component</button>
+<br><br><hr>
+<app-child-b [parentToChildExample]="message"></app-child-b>

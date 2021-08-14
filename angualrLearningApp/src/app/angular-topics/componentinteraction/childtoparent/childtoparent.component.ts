@@ -12,4 +12,5 @@ export class ChildtoparentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
 }
