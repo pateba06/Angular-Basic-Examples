@@ -1,3 +1,5 @@
 <p>
-  parent-a works!
+  parent Component
 </p>
+<h4> Message from Child to Parent : {{childData}}</h4>
+<app-child-a (messageFromChild)="parentMethod($event)"></app-child-a>

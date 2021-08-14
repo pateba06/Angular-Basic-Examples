@@ -12,4 +12,9 @@ export class ParentAComponent implements OnInit {
   ngOnInit() {
   }
 
+  childData:string;
+  parentMethod(data){
+    this.childData =data; 
+  }
+
 }
