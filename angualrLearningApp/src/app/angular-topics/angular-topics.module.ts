@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { AngularTopicsRoutingModule } from './angular-topics-routing.module';
 import { AngularTopicsComponent } from './angular-topics.component';
+import { CrudserviceService } from './crudexample/crudservice.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +13,10 @@ import { AngularTopicsComponent } from './angular-topics.component';
   ],
   imports: [
     CommonModule,
-    AngularTopicsRoutingModule
-  ]
+    AngularTopicsRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
+  ],
+  providers: [CrudserviceService],
 })
 export class AngularTopicsModule { }
