@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { CrudexampleRoutingModule } from './crudexample-routing.module';
 import { CrudexampleComponent } from './crudexample.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -11,7 +13,10 @@ import { CrudexampleComponent } from './crudexample.component';
   ],
   imports: [
     CommonModule,
-    CrudexampleRoutingModule
+    CrudexampleRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule
   ]
 })
 export class CrudexampleModule { }

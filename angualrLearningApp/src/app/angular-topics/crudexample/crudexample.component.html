@@ -1,2 +1,92 @@
 <a class="btn btn-primary" href="#" role="button">Back To Main Page</a>
-<p>crudexample works!</p>
+
+<!-- This block is just to give brief what will be needed -->
+<div class="container">
+    <div class="accordion row" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    CRUD
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse hide" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <hr>
+                <li> C: Create</li>
+                <li> R: Read </li>
+                <li> U: Update </li>
+                <li> D: Delete
+                </li>
+                <br>
+                <hr>
+                <ol>
+                    <li>We will use Local JSON server </li>
+                    <li>Go to npm and find json-server and follow the document</li>
+                    <li>To run server : json-server --watch db.json</li>
+                    <li>declare create,read,update and delete function in service</li>
+                    <li>Import HttpClientModule in app.module.ts</li>
+                    <li>db.json define your endpoints</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+<hr>
+<!-- Practical example of Crud using Template Forma 
+Make sure to import FormsModule-->
+
+<div class="container">
+    <div class="row">
+        <!-- ngForm - creates a top-level FormGroup instance and binds it to a form to track aggregate 
+            form value and validation -->
+        <form #myForm="ngForm">
+            <h1>CRUD example for Template Form</h1>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" name="name" aria-describedby="emailHelp" [(ngModel)]="userObj.user">
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="text" class="form-control" name="mobile" aria-describedby="emailHelp" [(ngModel)]="userObj.mobile">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="text" class="form-control" name="email" aria-describedby="emailHelp" [(ngModel)]="userObj.email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text" class="form-control" name="password" aria-describedby="emailHelp" [(ngModel)]="userObj.password">
+            </div><br>
+            <button type="button" class="btn btn-primary" (click)="addUser(myForm.value)"
+            *ngIf="!isEdit">Submit</button>
+            <button type="button" class="btn btn-info" *ngIf="isEdit" (click)="updateUser()">Update</button>
+        </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Full Name</th>
+                    <th scope="col">Mobile</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor ="let user of allUserObj">
+                    <td>{{user.name}}</td>
+                    <td>{{user.mobile}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.password}}</td>
+                    <td><button class="btn btn-warning" (click)="editUser(user)">Edit</button></td>
+                    <td><button class="btn btn-danger"(click)="deleteUser(user)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
