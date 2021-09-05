@@ -1,9 +1,4 @@
-# angularAllTopics
-
-In this git.
-I am trying to keep regular Angular concepts.
-The main branch is develop which I am doing periodically merge.
-The purpose of git is to include more angular concept in one branch, I haven't took care of UI layout much in this git. 
+# angularFewTopics With Example
 
 In entire flow all the components are lazy loaded
 
@@ -14,3 +9,10 @@ shortcut command for lazy loading
   example
   
   `ng generate module interaction-using-observable --module componentinteraction --routing true --route interactionobservableexample `
+  
+  
+  This App is covering topics like
+  Component Interaction - using @Input , @Output , observable and services
+  lazyloading
+  observable
+  RXJS
